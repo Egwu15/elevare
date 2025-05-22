@@ -11,16 +11,16 @@ export default function Welcome() {
                 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
             </Head>
 
-            <header className="mx-auto my-6 w-full bg-black text-sm">
+            <header className="mx-auto w-full bg-black py-6 text-sm">
                 <nav className="mx-auto mt-4 flex items-center justify-between gap-4 px-5 md:px-0 lg:max-w-6xl">
                     <AppLogoIcon />
-                    <Button variant="outline" className="border-white text-white">
+                    <Button variant="outline" className="border-white bg-black text-white">
                         Explore Courses
                     </Button>
                 </nav>
             </header>
-            <div className="flex w-full opacity-100 transition-opacity duration-750 lg:grow starting:opacity-0">
-                <main className="mx-auto w-full max-w-6xl px-5 md:px-0">
+            <div className="flex w-full bg-black opacity-100 transition-opacity duration-750 lg:grow starting:opacity-0">
+                <main className="mx-auto w-full max-w-6xl px-5 text-white md:px-0">
                     <section className="mt-14 w-full items-center justify-between md:flex">
                         <div className="max-w-lg">
                             <p className="mb-6 text-4xl">
