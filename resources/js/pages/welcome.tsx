@@ -19,6 +19,7 @@ export default function Welcome() {
                     </Button>
                 </nav>
             </header>
+            
             <div className="flex w-full bg-black opacity-100 transition-opacity duration-750 lg:grow starting:opacity-0">
                 <main className="mx-auto w-full max-w-6xl px-5 text-white md:px-0">
                     <section className="mt-14 w-full items-center justify-between md:flex">
