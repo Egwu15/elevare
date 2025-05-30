@@ -8,13 +8,13 @@ interface CourseCardInterface {
 
 export default function CourseCard({ courseTitle, courseDescription, courseImage }: CourseCardInterface) {
     return (
-        <div className="mb-6 overflow-hidden rounded-sm bg-[#F7F7F7] md:mb-0">
-            <div className="flex items-start justify-between p-10">
+        <div className="mb-10 overflow-hidden rounded-sm bg-[#F7F7F7] md:mb-0">
+            <div className="flex items-start justify-between p-5 md:p-10">
                 <div className="">
                     <p className="text-xl">{courseTitle}</p>
                     <p className="text-xl">{courseDescription}</p>
                 </div>
-                <img src={arrowIcon} alt="Arrow" />
+                <img src={arrowIcon} width={50} className="md:ml-4" alt="Arrow" />
             </div>
             <img src={courseImage} alt="Product Management" />
         </div>
