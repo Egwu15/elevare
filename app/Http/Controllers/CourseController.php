@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Inertia\Inertia;
+
 class CourseController extends Controller
 {
     public function leaderShip()
@@ -36,5 +38,80 @@ class CourseController extends Controller
                 "Local Business Dynamics",
             ]
         ];
+
+        return Inertia::render('course', compact('course'));
     }
+
+    public function data()
+    {
+        $course = [
+            'PageTitle' => 'Data & Technology',
+            'sellPoints' => [
+                [
+                    "title" => "Analytics",
+                    "content" => "Discover how to interpret data to support business decisions using basic statistics and visualization tools."
+                ],
+                [
+                    "title" => "AI/ML Fundamentals",
+                    "content" => "Learn the basics of artificial intelligence and machine learning to understand their potential in solving common business challenges.",
+                ],
+                [
+                    "title" => "Cloud Technologies",
+                    "content" => "Gain an overview of cloud computing and how it can streamline operations and improve efficiency.",
+                ],
+            ],
+
+            "asideTitle" => "Data & Technology",
+            "asideContent" => "Equipped to help you with essential digital skills to harness data and emerging technologies. This course emphasizes easy-to-understand practices and hands-on exercises, ensuring you can translate technical insights into practical business decisions.",
+            "duration" => "12 weeks",
+            "courseCurriculum" => [
+                "Introduction to Data Analytics",
+                "Fundamentals of Data Interpretation",
+                "Artificial Intelligence & Machine Learning Fundamentals",
+                "Cloud Computing Essentials",
+                "Data Security & Compliance",
+                "Industry-Specific Data Practices",
+            ]
+        ];
+
+        return Inertia::render('course', compact('course'));
+    }
+
+    public function design()
+    {
+        $course = [
+            'PageTitle' => 'Design Thinking & Innovation',
+            'sellPoints' => [
+                [
+                    "title" => "User-Centric Approach",
+                    "content" => "Master techniques to identify customer needs and pain points through direct engagement and observation."
+                ],
+                [
+                    "title" => "Creative Problem Solving",
+                    "content" => "Practice the design thinking process—from brainstorming and prototyping to testing solutions—using straightforward, effective methods.",
+                ],
+                [
+                    "title" => "Iterative Innovation",
+                    "content" => "Learn how to refine your ideas through continuous feedback and incremental improvements.",
+                ],
+            ],
+
+            "asideTitle" => "Design Thinking & Innovation",
+            "asideContent" => "Designed to help you transform ideas into actionable solutions using a user-centric approach. This program encourages creative problem solving and iterative innovation, with a strong emphasis on real-world applications.",
+            "duration" => "12 weeks",
+            "courseCurriculum" => [
+                "Introduction to Design Thinking",
+                "User Research and Empathy",
+                "Ideation and Brainstorming Techniques",
+                "Prototyping and Rapid Iteration",
+                "User Testing and Feedback Analysis",
+                "Agile Experimentation",
+                "Local Challenges and Opportunities:",
+            ]
+        ];
+
+        return Inertia::render('course', compact('course'));
+    }
+
+
 }

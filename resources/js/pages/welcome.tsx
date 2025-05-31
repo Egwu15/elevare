@@ -93,21 +93,25 @@ export default function Welcome() {
                                     courseTitle="Product Management"
                                     courseDescription="Master strategic thinking, competitive analysis, and agile execution."
                                     courseImage={product}
+                                    route={route('product')}
                                 />{' '}
                                 <CourseCard
                                     courseTitle="Leadership & Strategy"
                                     courseDescription="Develop the skills to manage teams, drive change, and influence stakeholders."
                                     courseImage={lead}
+                                    route={route('course.leadership')}
                                 />{' '}
                                 <CourseCard
                                     courseTitle="Data & Technology"
                                     courseDescription="Harness analytics, AI/ML, and cloud technologies to make data-driven decisions."
                                     courseImage={data}
+                                    route={route('course.data')}
                                 />{' '}
                                 <CourseCard
                                     courseTitle="Design Thinking & Innovation"
                                     courseDescription="Transform ideas into reality with user-centric design and creative problem-solving."
                                     courseImage={design}
+                                    route={route('course.design')}
                                 />
                             </div>
                         </section>
