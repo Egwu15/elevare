@@ -9,7 +9,7 @@
 
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-
+    --font-display: 'Bricolage Grotesque', sans-serif;
     --radius-lg: var(--radius);
     --radius-md: calc(var(--radius) - 2px);
     --radius-sm: calc(var(--radius) - 4px);
@@ -73,6 +73,15 @@
     ::backdrop,
     ::file-selector-button {
         border-color: var(--color-gray-200, currentColor);
+    }
+
+    h2 {
+        font-family: var(--font-display), serif;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-family: var(--font-display), serif;
     }
 }
 

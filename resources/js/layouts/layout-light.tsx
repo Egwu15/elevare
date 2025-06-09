@@ -8,7 +8,7 @@ import React from 'react';
 function LayoutLight({ children }: { children: React.ReactNode }) {
     return (
         <div>
-            <header className="w-full bg-white">
+            <header className="w-full bg-white px-5">
                 {/* Logo */}
                 <nav className="mx-auto flex h-16 items-center justify-between md:max-w-7xl">
                     <Link href="/" className="flex items-center space-x-2">
@@ -58,7 +58,7 @@ function LayoutLight({ children }: { children: React.ReactNode }) {
 
             <footer className="mx-auto bg-black px-5 py-32 text-center text-white">
                 <div>
-                    <p className="mb-4 text-4xl font-medium">Get Started Today</p>
+                    <h2 className="mb-4 text-4xl font-medium">Get Started Today</h2>
                     <p className="mx-auto max-w-lg text-center text-xl">
                         Take the first step towards a transformative career. Explore our courses, connect with our expert faculty, and join a
                         community dedicated to professional excellence.
@@ -69,8 +69,8 @@ function LayoutLight({ children }: { children: React.ReactNode }) {
                     <hr className="my-28 border-white/40" />
                 </div>
                 <div>
-                    <p className="mb-4 text-3xl font-medium md:text-4xl">Have questions?</p>
-                    <p className="mx-auto text-center text-2xl md:text-3xl">Reach out to us at info@elevareacademy.com</p>
+                    <h2 className="mb-4 text-3xl font-medium md:text-4xl">Have questions?</h2>
+                    <h2 className="mx-auto text-center text-2xl md:text-3xl">Reach out to us at info@elevareacademy.com</h2>
                     <p className="mx-auto mt-6 px-3 text-center text-xl text-white/40">
                         Elevare Academy – Empowering Professionals to Scale New Heights
                     </p>

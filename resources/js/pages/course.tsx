@@ -1,7 +1,7 @@
 import hex from '@/assets/icons/hex.svg';
 import { Button } from '@/components/ui/button';
 import Layout from '@/layouts/layout-light';
-import { Head } from '@inertiajs/react';
+import { Head, Link } from '@inertiajs/react';
 
 interface SellPoint {
     title: string;
@@ -25,7 +25,9 @@ export default function course({ course }: { course: Course }) {
             <section className="my-40">
                 <p className="mb-6 text-center text-3xl font-bold md:text-6xl">{course.PageTitle}</p>
                 <div className="mx-auto max-w-xl px-5 text-center">
-                    <Button className="bg-green-500 px-8 hover:bg-green-400">Start Learning</Button>
+                    <Link href={route('start-learning')}>
+                        <Button className="bg-green-500 px-8 hover:bg-green-400">Start Learning</Button>
+                    </Link>
                 </div>
             </section>
 

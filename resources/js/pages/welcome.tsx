@@ -10,7 +10,7 @@ import product from '@/assets/images/product.jpg';
 import CourseCard from '@/components/home/course-card';
 import { Button } from '@/components/ui/button';
 import LayoutDark from '@/layouts/layout-dark';
-import { Head } from '@inertiajs/react';
+import { Head, Link } from '@inertiajs/react';
 
 export default function Welcome() {
     return (
@@ -26,16 +26,18 @@ export default function Welcome() {
                         <section className="w-full bg-black px-5 md:px-0">
                             <section className="mx-auto w-full max-w-7xl items-center justify-between py-14 text-white md:flex">
                                 <div className="max-w-lg">
-                                    <p className="mb-6 text-4xl">
+                                    <h2 className="mb-6 text-4xl">
                                         Elevating Careers,
                                         <br /> Transforming Lives
-                                    </p>
+                                    </h2>
 
                                     <p className="mb-14">
                                         Hands-on, industry-aligned education that bridges the gap between theory and real-world success. Designed for
                                         professionals who aspire to scale new heights
                                     </p>
-                                    <Button className="bg-green-500 px-8 hover:bg-green-400">Start Learning</Button>
+                                    <Link href={route('start-learning')}>
+                                        <Button className="bg-green-500 px-8 hover:bg-green-400">Start Learning</Button>
+                                    </Link>
                                 </div>
                                 <div className="hidden md:block">
                                     <img src={homeHeaderImage} alt="Professionals" />
@@ -44,19 +46,19 @@ export default function Welcome() {
                         </section>
                         <section>
                             <div className="my-20 w-full grid-cols-3 bg-white p-5 md:grid md:p-20">
-                                <p className="text-4xl md:text-5xl">
+                                <h3 className="text-4xl md:text-5xl">
                                     Online Learning <br /> <span className="text-green-500">Designed for</span>
                                     <br /> <span className="text-green-500">Professionals</span>
-                                </p>
+                                </h3>
                                 <div className="mb:mt-8 mx-0 mt-14 md:mt-0">
                                     <div className="mb-10 md:mt-0">
-                                        <p className="mb-4 text-3xl md:text-4xl">Hands-On Learning</p>
+                                        <h3 className="mb-4 text-3xl md:text-4xl">Hands-On Learning</h3>
                                         <p className="mb-3 text-xl md:mb-0">
                                             Engage in real-world projects, case studies, and simulations that mirror actual business challenges.
                                         </p>
                                     </div>
                                     <div className="mb-10 md:mt-0">
-                                        <p className="mt-4 mb-4 text-3xl md:mt-14 md:text-4xl">Personalized Career Paths</p>
+                                        <h3 className="mt-4 mb-4 text-3xl md:mt-14 md:text-4xl">Personalized Career Paths</h3>
                                         <p className="mb-3 text-xl md:mb-0">
                                             Customized programs that align with your aspirations—whether you're climbing the corporate ladder or
                                             leading your own venture.
@@ -65,13 +67,13 @@ export default function Welcome() {
                                 </div>
                                 <div className="md:pl-2">
                                     <div className="mb-10 md:mt-0">
-                                        <p className="mb-4 text-3xl md:mt-0 md:text-4xl">Learn with Others</p>
+                                        <h3 className="mb-4 text-3xl md:mt-0 md:text-4xl">Learn with Others</h3>
                                         <p className="mb-3 text-xl md:mb-0">
                                             We provide you with a community that you can interact and grow with so you don’t learn alone .
                                         </p>
                                     </div>
                                     <div className="mb-10 md:mt-0">
-                                        <p className="mt-4 mb-4 text-3xl md:mt-14 md:text-4xl">Global Perspective</p>
+                                        <h3 className="mt-4 mb-4 text-3xl md:mt-14 md:text-4xl">Global Perspective</h3>
                                         <p className="mb-3 text-xl md:mb-0">
                                             Learn alongside a diverse community of professionals from around the world.
                                         </p>
@@ -81,7 +83,7 @@ export default function Welcome() {
                         </section>
                         <section className="mx-auto w-full max-w-7xl px-5 md:px-0">
                             <div className="px-4 text-center">
-                                <p className="text-4xl font-bold">Our Programs</p>
+                                <h2 className="text-4xl font-bold">Our Programs</h2>
                                 <p className="mx-auto mt-5 max-w-lg text-xl">
                                     Each program run for 12 weeks and is designed by top industry experts to ensure you gain the skills that matter
                                     most in today's competitive landscape.
@@ -118,9 +120,9 @@ export default function Welcome() {
                         <section className="my-36 bg-[#EAF0ED]">
                             <div className="mx-auto w-full max-w-7xl px-5 py-32 md:px-0">
                                 <div className="mb-14">
-                                    <p className="text-4xl">
+                                    <h3 className="text-4xl">
                                         Flexible & <br /> Accessible Learning
-                                    </p>
+                                    </h3>
                                     <p className="mt-5 max-w-sm text-xl">
                                         Elevare Academy offers a dynamic learning experience that fits your schedule.
                                     </p>
@@ -149,21 +151,21 @@ export default function Welcome() {
                             </div>
                         </section>
                         <section className="w-full">
-                            <p className="text-center text-3xl font-medium">Meet Your Instructors</p>
+                            <h2 className="text-center text-4xl font-medium">Meet Your Instructors</h2>
                             <div className="mt-20 mb-32 max-w-7xl grid-cols-3 gap-3 px-5 md:mx-auto md:grid">
                                 <div className="mt-3 mb-9 md:mt-0 md:mb-0">
                                     <img src={charles} alt="charles" />
-                                    <p className="mt-1 text-3xl"> Charles Oloyede</p>
+                                    <h3 className="mt-1 text-3xl"> Charles Oloyede</h3>
                                     <p className="text-xl">Product Lead at GIGMobility</p>
                                 </div>
                                 <div className="mt-3 mb-9 md:mt-0 md:mb-0">
                                     <img src={alice} alt="alice" />
-                                    <p className="mt-1 text-3xl"> Alicia Jeffrey</p>
+                                    <h3 className="mt-1 text-3xl"> Alicia Jeffrey</h3>
                                     <p className="text-xl">Product Lead at GIGMobility</p>
                                 </div>
                                 <div className="mt-3 md:mt-0">
                                     <img src={emily} alt="emily" />
-                                    <p className="mt-1 text-3xl"> Emily McDorough</p>
+                                    <h3 className="mt-1 text-3xl"> Emily McDorough</h3>
                                     <p className="text-xl">Product Manager at Figma</p>
                                 </div>
                             </div>
@@ -171,7 +173,7 @@ export default function Welcome() {
                         <section className="bg-[#EAF0ED]">
                             <div className="mx-auto w-full max-w-7xl px-5 py-32 md:flex md:px-0">
                                 <div className="w-full">
-                                    <p className="mb-4 text-3xl font-medium">Partner with Us</p>
+                                    <h2 className="mb-4 text-3xl font-medium">Partner with Us</h2>
                                     <p className="max-w-sm text-xl">
                                         Join our growing network of global industry leaders, investors, and corporate partners. Elevare Academy is not
                                         just an education provider—we’re a catalyst for change
@@ -182,13 +184,13 @@ export default function Welcome() {
                                 <div className="my-20 w-full md:my-0">
                                     <div className="mb-14 w-full">
                                         <div className="max-w-lg">
-                                            <p className="text-3xl">Talent Pipeline</p>
+                                            <h3 className="text-3xl">Talent Pipeline</h3>
                                             <p className="text-xl">Gain early access to our pool of highly skilled professionals.</p>
                                         </div>
                                     </div>
                                     <div className="mb-14 w-full">
                                         <div className="max-w-lg">
-                                            <p className="text-3xl">Co-Creation</p>
+                                            <h3 className="text-3xl">Co-Creation</h3>
                                             <p className="text-xl">
                                                 Collaborate with us to design custom training solutions that meet your organization’s needs.
                                             </p>
@@ -196,7 +198,7 @@ export default function Welcome() {
                                     </div>
                                     <div className="mb-14 w-full">
                                         <div className="max-w-lg">
-                                            <p className="text-3xl">Strategic Alliances</p>
+                                            <h3 className="text-3xl">Strategic Alliances</h3>
                                             <p className="text-xl">Leverage partnerships that drive innovation and elevate industry standards.</p>
                                         </div>
                                     </div>

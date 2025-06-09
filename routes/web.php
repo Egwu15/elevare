@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
@@ -18,12 +19,18 @@ Route::get('/product', [ProductController::class, 'index'])->name('product');
 Route::get('/course/leadership', [CourseController::class, 'leadership'])->name('course.leadership');
 Route::get('/course/data', [CourseController::class, 'data'])->name('course.data');
 Route::get('/course/design', [CourseController::class, 'design'])->name('course.design');
+Route::get('/start-learning', function () {
+    return Inertia::render('startLearning');
+})->name('start-learning');
 
-Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('dashboard', function () {
-        return Inertia::render('dashboard');
-    })->name('dashboard');
-});
+Route::post('/submit-contact', [ContactController::class, 'submitContactForm'])->name('submit-contact-form');
 
-require __DIR__ . '/settings.php';
-require __DIR__ . '/auth.php';
+//Route::middleware(['auth', 'verified'])->group(function () {
+//    Route::get('dashboard', function () {
+//        return Inertia::render('dashboard');
+//    })->name('dashboard');
+//});
+
+
+//require __DIR__ . '/settings.php';
+//require __DIR__ . '/auth.php';
