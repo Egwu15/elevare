@@ -1,4 +1,7 @@
 import hex from '@/assets/icons/hex.svg';
+import alice from '@/assets/images/alice.jpg';
+import charles from '@/assets/images/charles.jpg';
+import emily from '@/assets/images/emily.jpg';
 import product from '@/assets/images/product.jpg';
 import { Button } from '@/components/ui/button';
 import LayoutDark from '@/layouts/layout-dark';
@@ -11,7 +14,7 @@ export default function about() {
             <main>
                 <section className="w-full bg-black px-5 py-14 text-white md:px-0">
                     <div className="mx-auto max-w-lg text-center">
-                        <h2 className="mb-6 text-4xl">About us</h2>
+                        <h2 className="mb-6 text-4xl">About Us</h2>
 
                         <p className="mb-14 text-lg">
                             We are not just an institution; we are a community of visionaries dedicated to shaping the future of professional
@@ -19,7 +22,7 @@ export default function about() {
                             our vibrant learning environment.
                         </p>
                         <Link href={route('start-learning')}>
-                            <Button className="bg-green-500 px-8 hover:bg-green-400">Start Learning</Button>
+                            <Button className="bg-[#00AE48] px-8 hover:bg-[#008A38]">Start Learning</Button>
                         </Link>
                     </div>
                 </section>
@@ -65,6 +68,26 @@ export default function about() {
                         </div>
                     </div>
                 </section>
+                <section className="w-full">
+                    <h2 className="text-center text-4xl font-medium">Meet Our Advisors</h2>
+                    <div className="mt-20 mb-32 max-w-7xl grid-cols-3 gap-3 px-5 md:mx-auto md:grid">
+                        <div className="mt-3 mb-9 md:mt-0 md:mb-0">
+                            <img src={charles} alt="charles" />
+                            <h3 className="mt-1 text-3xl"> Charles Oloyede</h3>
+                            <p className="text-xl">Product Lead at GIGMobility</p>
+                        </div>
+                        <div className="mt-3 mb-9 md:mt-0 md:mb-0">
+                            <img src={alice} alt="alice" />
+                            <h3 className="mt-1 text-3xl"> Alicia Jeffrey</h3>
+                            <p className="text-xl">Product Lead at GIGMobility</p>
+                        </div>
+                        <div className="mt-3 md:mt-0">
+                            <img src={emily} alt="emily" />
+                            <h3 className="mt-1 text-3xl"> Emily McDorough</h3>
+                            <p className="text-xl">Product Manager at Figma</p>
+                        </div>
+                    </div>
+                </section>
                 <section className="bg-[#EAF0ED]">
                     <div className="mx-auto w-full max-w-7xl px-5 py-32 md:flex md:px-0">
                         <div className="w-full">
@@ -79,13 +102,13 @@ export default function about() {
                         <div className="my-20 w-full md:my-0">
                             <div className="mb-14 w-full">
                                 <div className="max-w-lg">
-                                    <h3 className="text-3xl">Talent Pipeline</h3>
+                                    <h3 className="pb-[16px] text-3xl">Talent Pipeline</h3>
                                     <p className="text-xl">Gain early access to our pool of highly skilled professionals.</p>
                                 </div>
                             </div>
                             <div className="mb-14 w-full">
                                 <div className="max-w-lg">
-                                    <h3 className="text-3xl">Co-Creation</h3>
+                                    <h3 className="pb-[16px] text-3xl">Co-Creation</h3>
                                     <p className="text-xl">
                                         Collaborate with us to design custom training solutions that meet your organization’s needs.
                                     </p>
@@ -93,7 +116,7 @@ export default function about() {
                             </div>
                             <div className="mb-14 w-full">
                                 <div className="max-w-lg">
-                                    <h3 className="text-3xl">Strategic Alliances</h3>
+                                    <h3 className="pb-[16px] text-3xl">Strategic Alliances</h3>
                                     <p className="text-xl">Leverage partnerships that drive innovation and elevate industry standards.</p>
                                 </div>
                             </div>

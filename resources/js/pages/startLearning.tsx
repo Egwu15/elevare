@@ -64,7 +64,7 @@ export default function StartLearning() {
                     </div>
                     <div className="mt-4 md:flex">
                         <div className="mt-4 mr-0 w-full md:mt-0 md:mr-2">
-                            <p className="mb-1 text-xl">First name</p>
+                            <p className="mb-1 text-xl">First name*</p>
                             <Input
                                 id="first_name"
                                 type="text"
@@ -79,7 +79,7 @@ export default function StartLearning() {
                             <InputError message={errors.email} />
                         </div>
                         <div className="mt-4 ml-0 w-full md:mt-0 md:ml-2">
-                            <p className="mb-1 text-xl">Last name</p>
+                            <p className="mb-1 text-xl">Last name*</p>
                             <Input
                                 id="last_name"
                                 type="text"
@@ -89,7 +89,7 @@ export default function StartLearning() {
                                 autoComplete="name"
                                 value={data.last_name}
                                 onChange={(e) => setData('last_name', e.target.value)}
-                                placeholder="John"
+                                placeholder="Doe"
                             />
                             <InputError message={errors.last_name} />
                         </div>
@@ -113,20 +113,19 @@ export default function StartLearning() {
                         </Select>
                     </div>
                     <div className="mt-4 w-full">
-                        <p className="mb-1.5 text-xl">Course of Interest</p>
+                        <p className="mb-1.5 text-xl">Any other note</p>
                         <TextArea
                             id="note"
                             required
                             autoFocus
                             tabIndex={5}
-                            autoComplete="name"
                             value={data.note}
                             onChange={(e) => setData('note', e.target.value)}
-                            placeholder="John"
+                            placeholder="Use this space for any information you’d like to share with us"
                         />
                     </div>
 
-                    <Button className="mt-10 w-full bg-green-500 px-8 hover:bg-green-400" disabled={processing}>
+                    <Button className="mt-10 w-full bg-[#00AE48] px-8 hover:bg-[#008A38]" disabled={processing}>
                         {processing && <LoaderCircle className="h-4 w-4 animate-spin" />}
                         Register Interest
                     </Button>

@@ -10,6 +10,7 @@ class CourseController extends Controller
     {
         $course = [
             'PageTitle' => 'Leadership & Strategy',
+            'subtitle' => 'This program builds your ability to lead and manage effectively. ',
             'sellPoints' => [
                 [
                     "title" => "Manage Teams",
@@ -46,6 +47,7 @@ class CourseController extends Controller
     {
         $course = [
             'PageTitle' => 'Data & Technology',
+            'subtitle' => 'This course equips you with essential digital skills. ',
             'sellPoints' => [
                 [
                     "title" => "Analytics",
@@ -81,6 +83,7 @@ class CourseController extends Controller
     {
         $course = [
             'PageTitle' => 'Design Thinking & Innovation',
+            'subtitle' => 'This program helps you turn ideas into actionable solutions.',
             'sellPoints' => [
                 [
                     "title" => "User-Centric Approach",

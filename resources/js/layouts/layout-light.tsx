@@ -18,12 +18,14 @@ function LayoutLight({ children }: { children: React.ReactNode }) {
                     {/* Desktop CTA Button */}
                     <div className="hidden items-center md:flex">
                         <Link href={route('about')}>
-                            <h2 className="mx-0 text-lg font-bold text-green-500 md:mx-6">About us</h2>
+                            <h2 className="mx-0 text-lg font-bold text-green-500 md:mx-6">About Us</h2>
                         </Link>
 
-                        <Button variant="outline" className="border-2 border-green-500 bg-white font-bold text-green-500">
-                            Explore Courses
-                        </Button>
+                        <Link href={`${route('home')}/#explore`}>
+                            <Button variant="outline" className="border-2 border-green-500 bg-white font-bold text-green-500">
+                                Explore Courses
+                            </Button>
+                        </Link>
                     </div>
 
                     {/* Mobile Drawer */}
@@ -63,14 +65,17 @@ function LayoutLight({ children }: { children: React.ReactNode }) {
                         Take the first step towards a transformative career. Explore our courses, connect with our expert faculty, and join a
                         community dedicated to professional excellence.
                     </p>
-                    <Button className="mt-9 rounded-sm bg-[#00AE48] px-16 hover:bg-green-400">Explore Courses</Button>
+
+                    <Link href={`${route('home')}/#explore`}>
+                        <Button className="mt-9 rounded-sm bg-[#00AE48] px-16 hover:bg-green-400">Explore Courses</Button>
+                    </Link>
                 </div>
                 <div className="mx-auto max-w-7xl">
                     <hr className="my-28 border-white/40" />
                 </div>
                 <div>
                     <h2 className="mb-4 text-3xl font-medium md:text-4xl">Have questions?</h2>
-                    <h2 className="mx-auto text-center text-2xl md:text-3xl">Reach out to us at info@elevareacademy.com</h2>
+                    <h2 className="mx-auto text-center text-2xl md:text-3xl">Reach out to us at info@elevareng.com</h2>
                     <p className="mx-auto mt-6 px-3 text-center text-xl text-white/40">
                         Elevare Academy – Empowering Professionals to Scale New Heights
                     </p>

@@ -22,7 +22,7 @@ export default function product({ courses }: { courses: Course[] }) {
                         Hands-on product management training to prepare and equip you to excel anywhere you find yourself in the world.
                     </p>
                     <Link href={route('start-learning')}>
-                        <Button className="bg-green-500 px-8 hover:bg-green-400">Start Learning</Button>
+                        <Button className="bg-[#00AE48] px-8 hover:bg-[#008A38]">Start Learning</Button>
                     </Link>
                 </div>
             </section>

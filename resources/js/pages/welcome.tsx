@@ -25,8 +25,8 @@ export default function Welcome() {
                     <main className="w-full opacity-100 transition-opacity duration-750 lg:grow starting:opacity-0">
                         <section className="w-full bg-black px-5 md:px-0">
                             <section className="mx-auto w-full max-w-7xl items-center justify-between py-14 text-white md:flex">
-                                <div className="max-w-lg">
-                                    <h2 className="mb-6 text-4xl">
+                                <div className="max-w-2xl">
+                                    <h2 className="mb-6 text-4xl md:text-6xl">
                                         Elevating Careers,
                                         <br /> Transforming Lives
                                     </h2>
@@ -36,7 +36,7 @@ export default function Welcome() {
                                         professionals who aspire to scale new heights
                                     </p>
                                     <Link href={route('start-learning')}>
-                                        <Button className="bg-green-500 px-8 hover:bg-green-400">Start Learning</Button>
+                                        <Button className="bg-green-500 px-8 hover:bg-[#008A38]">Start Learning</Button>
                                     </Link>
                                 </div>
                                 <div className="hidden md:block">
@@ -47,18 +47,18 @@ export default function Welcome() {
                         <section>
                             <div className="my-20 w-full grid-cols-3 bg-white p-5 md:grid md:p-20">
                                 <h3 className="text-4xl md:text-5xl">
-                                    Online Learning <br /> <span className="text-green-500">Designed for</span>
-                                    <br /> <span className="text-green-500">Professionals</span>
+                                    Online Learning <br /> <span className="text-[#006A2C]">Designed for</span>
+                                    <br /> <span className="text-[#006A2C]">Professionals</span>
                                 </h3>
                                 <div className="mb:mt-8 mx-0 mt-14 md:mt-0">
                                     <div className="mb-10 md:mt-0">
-                                        <h3 className="mb-4 text-3xl md:text-4xl">Hands-On Learning</h3>
+                                        <h3 className="mb-4 text-3xl md:text-[32px]">Hands-On Learning</h3>
                                         <p className="mb-3 text-xl md:mb-0">
                                             Engage in real-world projects, case studies, and simulations that mirror actual business challenges.
                                         </p>
                                     </div>
                                     <div className="mb-10 md:mt-0">
-                                        <h3 className="mt-4 mb-4 text-3xl md:mt-14 md:text-4xl">Personalized Career Paths</h3>
+                                        <h3 className="mt-4 mb-4 text-3xl md:mt-14 md:text-[32px]">Personalized Career Paths</h3>
                                         <p className="mb-3 text-xl md:mb-0">
                                             Customized programs that align with your aspirations—whether you're climbing the corporate ladder or
                                             leading your own venture.
@@ -67,13 +67,13 @@ export default function Welcome() {
                                 </div>
                                 <div className="md:pl-2">
                                     <div className="mb-10 md:mt-0">
-                                        <h3 className="mb-4 text-3xl md:mt-0 md:text-4xl">Learn with Others</h3>
+                                        <h3 className="mb-4 text-3xl md:mt-0 md:text-[32px]">Learn with Others</h3>
                                         <p className="mb-3 text-xl md:mb-0">
                                             We provide you with a community that you can interact and grow with so you don’t learn alone .
                                         </p>
                                     </div>
                                     <div className="mb-10 md:mt-0">
-                                        <h3 className="mt-4 mb-4 text-3xl md:mt-14 md:text-4xl">Global Perspective</h3>
+                                        <h3 className="mt-4 mb-4 text-3xl md:mt-14 md:text-[32px]">Global Perspective</h3>
                                         <p className="mb-3 text-xl md:mb-0">
                                             Learn alongside a diverse community of professionals from around the world.
                                         </p>
@@ -83,7 +83,9 @@ export default function Welcome() {
                         </section>
                         <section className="mx-auto w-full max-w-7xl px-5 md:px-0">
                             <div className="px-4 text-center">
-                                <h2 className="text-4xl font-bold">Our Programs</h2>
+                                <h2 id="explore" className="text-4xl font-medium">
+                                    Our Programs
+                                </h2>
                                 <p className="mx-auto mt-5 max-w-lg text-xl">
                                     Each program run for 12 weeks and is designed by top industry experts to ensure you gain the skills that matter
                                     most in today's competitive landscape.
@@ -130,13 +132,13 @@ export default function Welcome() {
                                 <div className="grid-cols-3 gap-20 md:grid">
                                     <div className="my-10 md:my-0">
                                         <img src={hex} alt="Hex Icon" className="mb-4" />
-                                        <p className="text-3xl">Engage in Workshops</p>
+                                        <p className="pb-[16px] text-3xl">Engage in Workshops</p>
                                         <p className="text-xl">Participate in immersive, hands-on sessions from anywhere you are in the world.</p>
                                     </div>
 
                                     <div className="my-10 md:my-0">
                                         <img src={hex} alt="Hex Icon" className="mb-4" />
-                                        <p className="text-3xl">Cohort Based Learning</p>
+                                        <p className="pb-[16px] text-3xl">Cohort Based Learning</p>
                                         <p className="text-xl">
                                             You’ll learn together with peers in live classes with access to recordings so you can replay at any time.
                                         </p>
@@ -144,7 +146,7 @@ export default function Welcome() {
 
                                     <div className="my-10 md:my-0">
                                         <img src={hex} alt="Hex Icon" className="mb-4" />
-                                        <p className="text-3xl">Access to Mentorship</p>
+                                        <p className="pb-[16px] text-3xl">Access to Mentorship</p>
                                         <p className="text-xl">Schedule calls with mentors for a one-on-one session when necessary.</p>
                                     </div>
                                 </div>
@@ -184,13 +186,13 @@ export default function Welcome() {
                                 <div className="my-20 w-full md:my-0">
                                     <div className="mb-14 w-full">
                                         <div className="max-w-lg">
-                                            <h3 className="text-3xl">Talent Pipeline</h3>
+                                            <h3 className="pb-[16px] text-3xl">Talent Pipeline</h3>
                                             <p className="text-xl">Gain early access to our pool of highly skilled professionals.</p>
                                         </div>
                                     </div>
                                     <div className="mb-14 w-full">
                                         <div className="max-w-lg">
-                                            <h3 className="text-3xl">Co-Creation</h3>
+                                            <h3 className="pb-[16px] text-3xl">Co-Creation</h3>
                                             <p className="text-xl">
                                                 Collaborate with us to design custom training solutions that meet your organization’s needs.
                                             </p>
@@ -198,7 +200,7 @@ export default function Welcome() {
                                     </div>
                                     <div className="mb-14 w-full">
                                         <div className="max-w-lg">
-                                            <h3 className="text-3xl">Strategic Alliances</h3>
+                                            <h3 className="pb-[16px] text-3xl">Strategic Alliances</h3>
                                             <p className="text-xl">Leverage partnerships that drive innovation and elevate industry standards.</p>
                                         </div>
                                     </div>
