@@ -1,1 +1,0 @@
-import{j as s}from"./app-DP-lEuGa.js";import{c as r}from"./createLucideIcon-BhWzdqNn.js";const t="/build/assets/Logo-D7_qh5yq.svg";function e({className:o=""}){return s.jsx("img",{className:r("",o),src:t,alt:"Elevare logo"})}export{e as A};
