@@ -3,13 +3,18 @@ import { Button } from '@/components/ui/button';
 import Layout from '@/layouts/layout-light';
 import { Head, Link } from '@inertiajs/react';
 
+interface SellPoint {
+    title: string;
+    content: string;
+}
+
 interface Course {
     title: string;
     duration: string;
     items: string[];
 }
 
-export default function product({ courses }: { courses: Course[] }) {
+export default function product({ courses, sellPoints }: { courses: Course[]; sellPoints: SellPoint[] }) {
     console.log(courses);
     return (
         <Layout>
@@ -27,6 +32,17 @@ export default function product({ courses }: { courses: Course[] }) {
                 </div>
             </section>
 
+            <section>
+                <div className="mx-auto max-w-7xl grid-cols-3 gap-20 px-5 md:grid">
+                    {sellPoints.map((sellPoint) => (
+                        <div className="my-10 md:my-0">
+                            <img src={hex} alt="Hex Icon" className="mb-4" />
+                            <p className="font-display py-[16px] text-3xl">{sellPoint.title}</p>
+                            <p className="text-xl">{sellPoint.content}</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
             <section className="mx-auto max-w-7xl gap-20 px-5 py-32 md:grid md:grid-cols-2">
                 {courses.map((course: Course) => (
                     <div className="border-bg-[#CCCCCC} my-10 w-full rounded-sm border px-6 py-6 md:my-0 md:px-6 lg:px-8">

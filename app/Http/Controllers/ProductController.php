@@ -42,6 +42,21 @@ class ProductController extends Controller
                 ]
             ]
         ];
-        return Inertia::render('product', compact('courses'));
+
+        $sellPoints = [
+            [
+                "title" => "Build Products",
+                "content" => "Gain hands-on experience in discovery, design, development, and launch, so you can take products from idea to market successfully."
+            ],
+            [
+                "title" => "Shape Strategy",
+                "content" => "Learn how to set product vision, define success metrics, and communicate effectively with cross-functional teams and executives.",
+            ],
+            [
+                "title" => "Lead Growth",
+                "content" => "Develop advanced leadership, influence, and technical fluency to position yourself for global opportunities as a product leader.",
+            ],
+        ];
+        return Inertia::render('product', compact('courses', 'sellPoints'));
     }
 }
